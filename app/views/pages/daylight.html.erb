@@ -1,10 +1,14 @@
+<div>
+  <h1 id="daylight-title">Daylight</h1>
 
-<h1 id="daylight-title">Daylight</h1>
-
-<div id="daylight-app">
-  <div class="row">
-    <div class="box col-md-3 col-md-offset-1">Morning</div>
-    <div class="box col-md-3 col-md-offset-1">Afternoon</div>
-    <div class="box col-md-3 col-md-offset-1">Evening</div>
+  <div id="daylight-app">
+    <div class="row">
+      <div onclick="changeBackground('Morning')" class="box col-md-3 col-md-offset-1">Morning</div>
+      <div onclick="changeBackground('Afternoon')" class="box col-md-3 col-md-offset-1">Afternoon</div>
+      <div onclick="changeBackground('Evening')" class="box col-md-3 col-md-offset-1">Evening</div>
   </div>
+  </div>
+
+    <p id="lastClicked">Last Clicked</p>
+
 </div>

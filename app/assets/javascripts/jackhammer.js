@@ -1,9 +1,11 @@
 //make a counter
+var colors = ["pink", "red", "green", "purple", "yellow"];
 var counter = 0;
 function jackhammer() {
-  //increase counter by 1
+
+  document.getElementById('jackhammer').style["background-color"] = colors[counter];
+
   counter ++;
-  console.log(counter);
 
   if (counter >= 5) {
     alert("You Win");
