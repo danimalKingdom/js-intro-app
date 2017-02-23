@@ -1,11 +1,13 @@
-var counter = 0;
+var nextNum = 1;
+var lastNum = 10;
 
-function clickNum(num) {
-  alert(num);
+function clickNum(num, box) {
+  if(num === nextNum) {
+    box.style["background-color"] = "green";
+
+    if(num === lastNum) {
+      alert('you win!');
+    }
+  }
+  nextNum++;
 }
-
-
-
-//make counter that incriments if number is greater than last that was passed
-
-//if current number = lastnumber + 1
